@@ -1,0 +1,42 @@
+﻿@model EPM.tb_Energia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tb_Energia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaAhorroEnergia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaAhorroEnergia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumoActualEnergia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConsumoActualEnergia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tb_Cliente.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tb_Cliente.Nombres)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
